@@ -1,0 +1,31 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .wrapper{
+    display: flex;
+  }
+  .progress {
+    &__item{
+      position: relative;
+      height:40px;
+      min-width:300px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+    &--bar{
+      height:40px;
+      width:0;
+      display: inline-block;
+      transition: width .3s ease-in;
+    }
+    &--text{
+      position: absolute;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}
+
+
